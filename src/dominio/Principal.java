@@ -14,7 +14,10 @@ public class Principal {
 		p.setDireccion("Almirante 23");
 		p.setTelefono("1134345656");
 		p.setEmail("Rodolfo@gmail.com");
+		Empleado e = new Empleado();
 		
-		System.out.println(p.toString());
+		
+//		System.out.println(p.toString());
+		System.out.println(e.toString());
 	}
 }

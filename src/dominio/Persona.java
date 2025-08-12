@@ -3,14 +3,10 @@ package dominio;
 import java.time.LocalDate;
 
 public class Persona {
-	private String dni;
-	private String nombre;
-	private String apellido;
+	private String dni,nombre, apellido, genero, direccion, telefono, email;
 	private LocalDate fechaNacimiento;
-	private String genero;
-	private String direccion;
-	private String telefono;
-	private String email;
+	private int edad;
+	
 	  
 	//Constructores
 	public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero,
@@ -26,9 +22,9 @@ public class Persona {
 	}
 
 	public Persona() { 
-		dni="0"; nombre="sin nombre"; apellido="sin apellido";
-		fechaNacimiento=LocalDate.of(1, 1, 1); genero="sin genero";
-		direccion="sin direccion"; telefono="sin telefono"; email="sin email";
+	
+		this.nombre = "sin nombre";
+		this.edad = 99;
 		}
 
 	public String getDni() {return dni;}
@@ -51,8 +47,8 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="
+		return "Persona dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="
 				+ fechaNacimiento + ", genero=" + genero + ", direccion=" + direccion + ", telefono=" + telefono
-				+ ", email=" + email + "]";
+				+ ", email=" + email  ;
 	}
 }
