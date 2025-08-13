@@ -1,7 +1,7 @@
-package dominio;
+package ejercicio1;
 import java.time.LocalDate;
 
-import dominio.Persona;
+import ejercicio1.Persona;
 
 public class Empleado extends Persona {
 	private final int legajo;
@@ -22,7 +22,7 @@ public class Empleado extends Persona {
 	
 	@Override
 	public String toString() {
-		return "Empleado Legajo=" + legajo + ", Puesto=" + puesto;
+		return super.toString() + "Empleado Legajo=" + legajo + ", Puesto=" + puesto;
 	}
 	public int getLegajo() {
 		return legajo;
@@ -34,7 +34,7 @@ public class Empleado extends Persona {
 	public void setPuesto(String puesto) {
 		this.puesto = puesto;
 	}
-	public String getProximoLegajo() {
+	public static String devuelveProximoLegajo() {
 		return "El proximo legajo es: " + Empleado.cont++ + ".";
 	}
 	

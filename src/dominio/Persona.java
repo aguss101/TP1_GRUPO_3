@@ -1,11 +1,10 @@
-package dominio;
+package ejercicio1;
 
 import java.time.LocalDate;
 
 public class Persona {
 	private String dni,nombre, apellido, genero, direccion, telefono, email;
 	private LocalDate fechaNacimiento;
-	private int edad;
 	
 	  
 	//Constructores
@@ -24,7 +23,7 @@ public class Persona {
 	public Persona() { 
 	
 		this.nombre = "sin nombre";
-		this.edad = 99;
+		this.fechaNacimiento = LocalDate.of(2025, 1, 1);
 		}
 
 	public String getDni() {return dni;}
