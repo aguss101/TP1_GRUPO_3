@@ -1,4 +1,4 @@
-package ejercicio1;
+package dominio;
 
 import java.time.LocalDate;
 
@@ -21,10 +21,9 @@ public class Persona {
 	}
 
 	public Persona() { 
-	
 		this.nombre = "sin nombre";
 		this.fechaNacimiento = LocalDate.of(2025, 1, 1);
-		}
+	}
 
 	public String getDni() {return dni;}
 	public String getNombre() { return nombre; }
@@ -46,8 +45,14 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="
-				+ fechaNacimiento + ", genero=" + genero + ", direccion=" + direccion + ", telefono=" + telefono
-				+ ", email=" + email  ;
+		return "Persona\n    " +
+				"Dni= " + dni + "\n    " + 
+				"Nombre= " + nombre + "\n    " +
+				"Apellido= " + apellido + "\n    " + 
+				"FechaNacimiento= " + fechaNacimiento + "\n    " + 
+				"Genero= " + genero + "\n    " + 
+				"Direccion= " + direccion + "\n    " + 
+				"Telefono= " + telefono + "\n    " + 
+				"Email= " + email;
 	}
 }

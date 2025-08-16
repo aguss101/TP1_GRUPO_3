@@ -1,8 +1,8 @@
-package ejercicio1;
+package dominio;
 
 import java.time.LocalDate;
 
-import ejercicio1.Persona;
+import dominio.Persona;
 
 public class Principal {
 	public static void main(String[] args) {
